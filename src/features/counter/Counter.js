@@ -35,11 +35,7 @@ export function Counter() {
         right: right_ic
     }
     const setInitPos = (e) => {
-        if (state.initPoint === 0) {
-            dispatch(setInit(Number(e.target.id)))
-            setTimeout(() => dispatch(changeState({ field: "isStart", value: false })), 1000)
-        }
-        else if (state.initPoint > 0 && state.randomTurns.length === 10) {
+        if (state.initPoint > 0 && state.randomTurns.length === 10) {
             dispatch(changeState({ field: "endPoint", value: Number(e.target.id) }))
             setTimeout(() => dispatch(clear()), 2000)
         }
@@ -103,6 +99,10 @@ export function Counter() {
     }
 
     useEffect(() => {
+        if (state.initPoint === 0) {
+            setTimeout(() => dispatch(setInit(Number(Math.floor(Math.random() * 9) + 1))), 1000)
+            setTimeout(() => dispatch(changeState({ field: "isStart", value: false })), 1600)
+        }
         if (state.randomTurns.length < 10 && state.currentPoint > 0) {
             let list = prepareArray(state.currentPoint)
             let step = shuffle(list)
@@ -118,7 +118,6 @@ export function Counter() {
                 let list = prepareArray(prevPoint)
                 for (let index = 0; index < list.length; index++) {
                     if (randomTurns[9] !== list[index]) {
-                        console.log("in loop  " + list[index])
                         updatedStep = list[index]
                         break
                     }
