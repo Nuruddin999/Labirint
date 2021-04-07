@@ -9,5 +9,4 @@ Rules:
 * Each arrow icon -  is turn to next grid cell from start point to direction shown on icon 
 * You should make full pass from start point with help of this arrow icons and find final point 
 * Once you find this final point (cell) , you should click on it , if you are right, you win  <img src="https://github.com/Nuruddin999/Labirint/blob/master/src/correct.svg" width="40px" height="40px">  
-* if you are not right you will see <img src="https://github.com/Nuruddin999/Labirint/blob/master/src/cross.svg" width="40px" height="40px">  and then you will shown right cell 
-* <img src="https://github.com/Nuruddin999/Labirint/blob/master/src/flag.svg" width="40px" height="40px"> 
+* if you are not right you will see <img src="https://github.com/Nuruddin999/Labirint/blob/master/src/cross.svg" width="40px" height="40px">  and then you will shown right cell <img src="https://github.com/Nuruddin999/Labirint/blob/master/src/flag.svg" width="40px" height="40px"> 
