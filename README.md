@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Rules:
 
-* Game starts with randomly choosen start point ((![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png))  on main board (3x3 grid)
+* Game starts with randomly choosen start point ((![](https://github.com/Nuruddin999/Labirint/blob/master/src/rocket.svg))  on main board (3x3 grid)
 * On down board (5x5 grid) arrow icons start to appear one by one
 * Each arrow icon -  is turn from start point to direction shown on icon 
 * You should make full pass from start point with help of this arrow icons and find final point 
