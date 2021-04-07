@@ -1,0 +1,14 @@
+body {
+  background-image: url("./back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainfield {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+
+.mainfield__square {
+  background: plum;
+}
